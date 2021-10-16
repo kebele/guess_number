@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>guess number</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+      integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3>yukarı aşağı</h3>
+      <hr />
+      <form action="">
+        <h4>tahminler</h4>
+        <ul class="last-guesses">
+          <!-- <li>25</li>
+          <li>50</li>
+          <li>75</li> -->
+        </ul>
+        <input
+          type="number"
+          min="1"
+          max="100"
+          placeholder="1-100 arası bir sayı giriniz"
+          id="guess"
+        />
+        <button type="submit" class="button-primary" id="guess-btn">
+          tahmin et
+        </button>
+      </form>
+      <p id="result"></p>
+      <button id="restart-btn" class="restart-btn">yeniden oyna</button>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
